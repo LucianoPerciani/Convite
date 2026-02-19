@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Convite - Confirmação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h2>🎉 Confirme sua Presença</h2>
+        <p>Preencha os dados abaixo para o <strong>Aniversário do Papai Noel</strong>!</p>
+        
+        <form id="rsvp-form">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="quantidade">Quantas pessoas (incluindo você)?</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" inputmode="numeric" required>
+
+            <label for="restricao">Restrição Alimentar ou Alergia?</label>
+            <textarea id="restricao" name="restricao" placeholder="Ex: Sou vegano, alérgico a amendoim..."></textarea>
+
+            <button type="submit">Enviar via WhatsApp</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
